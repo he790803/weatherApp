@@ -1,0 +1,174 @@
+          /* 載入外部字體 */
+          
+          @font-face {
+              font-family: jackeyfont;
+              src: url(../font/jackeyfont.ttf);
+          }
+          /* 共用style */
+          
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              list-style: none;
+          }
+          
+          a {
+              color: inherit;
+              text-decoration: none;
+          }
+          
+          p {
+              font-size: 26px;
+              font-weight: 600;
+              color: #efc371;
+          }
+          /* 左方地區介面 */
+          
+          nav {
+              line-height: 1.4;
+              font-family: tahoma;
+              background: #1d1f20;
+              padding: 25px 35px;
+              width: 300px;
+              border-radius: 17px;
+              box-shadow: 0 0 50px -15px black;
+              transform: scale(0) rotate(359px);
+              transition: all 0.3s;
+              font-size: 10px;
+              /* display: none; */
+          }
+          
+          nav>ol>li {
+              margin: 20px 0;
+              color: #b5bc77;
+          }
+          
+          nav>ol>li:first-of-type {
+              color: #efc371;
+          }
+          
+          nav>ol>li>ol {
+              margin: 10px 0 0 20px;
+              border-left: 1px solid #4d4d4c;
+              color: #ae94c0;
+          }
+          
+          nav>ol>li>ol li {
+              margin: 7px 0;
+              padding-left: 20px;
+          }
+          
+          .mainHead {
+              display: flex;
+              justify-content: space-evenly;
+          }
+          
+          .menu {
+              margin: 2%;
+          }
+          
+          .sub-menu {
+              width: 150px;
+          }
+          
+          .menuItem {
+              font-size: 20px;
+              font-weight: 600;
+          }
+          /* 右方資訊界面 */
+          
+          .mainInfo {
+              margin: 20px 15px;
+              width: 1000px;
+              background: #1d1f20;
+              border-radius: 17px;
+              box-shadow: 0 0 50px -15px black;
+              padding: 25px 35px;
+              position: relative;
+          }
+          
+          .title {
+              color: #4bc2c5;
+              margin-bottom: 30px;
+              font-size: 30px;
+          }
+          
+          .title,
+          #areaName {
+              display: inline-block;
+          }
+          
+          .content {
+              color: #ae94c0;
+              transition: all .3s linear;
+          }
+          
+          .content.active {
+              opacity: 0;
+              animation: slide 5s both;
+          }
+          
+          @keyframes slide {
+              0% {
+                  opacity: 0;
+              }
+              100% {
+                  opacity: 1;
+              }
+          }
+          
+          .dateTime {
+              color: #f2317f;
+          }
+          /* 下方介面 */
+          
+          .footerBar {
+              display: flex;
+              justify-content: center;
+              margin: 0 15px;
+              height: 220px;
+          }
+          
+          .footer {
+              box-shadow: 0 0 50px -15px black;
+              background: #1d1f20;
+              border-radius: 17px;
+              padding: 20px;
+              width: 1340px;
+              font-family: jackeyfont, serif;
+          }
+          
+          .footer>h3 {
+              color: #fff;
+          }
+          
+          .fa-info-circle {
+              color: #fff;
+              margin-right: 5px;
+          }
+          
+          .dev {
+              position: relative;
+          }
+          
+          .font {
+              position: absolute;
+              display: inline-block;
+              height: 20px;
+              width: 8px;
+              background-color: #fff;
+              animation-name: turn;
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: ease-in-out;
+          }
+          
+          @keyframes turn {
+              from {
+                  background-color: #fff;
+              }
+              to {
+                  background-color: #1d1f20;
+              }
+          }
