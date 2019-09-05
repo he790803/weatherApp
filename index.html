@@ -5,57 +5,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- fontawesome CDN -->
     <script src="https://kit.fontawesome.com/5d8c333ecd.js"></script>
+
     <!-- 自定義style -->
     <link rel="stylesheet" href="./style/style.css" />
-
     <title>氣象預報資訊</title>
 </head>
 
 <body>
     <div class="container">
         <div class="mainHead">
-            <nav class="menu">
-                <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">
-                    <地區/>
-                </p>
-                <ol>
-                    <li class="menu-group">
-                        <a href="#">
-                            <北部/>
-                        </a>
-                        <ol class="sub-menu" id="north"></ol>
-                    </li>
-                    <li class="menu-group">
-                        <a href="#">
-                            <中部/>
-                        </a>
-                        <ol class="sub-center">
-                            <li class="menuItem">
-                                <a href="#">
-                                    <更新中/>
-                                </a>
-                            </li>
-                        </ol>
-                    </li>
-                    <li class="menuItem"><a href="#">Updateing</a></li>
-                </ol>
-            </nav>
-            <div class="mainInfo">
-                <h3 class="title">
-                    氣象預報資訊 -
-                    <h3 class="title" id="areaName"></h3>
-                </h3>
-                <div class="content">
-                    <div class="homeContent">
-                        <p>
-                            主要為學習串接API之用，故只提供3個地區作為功能測試。
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <nav class="menu">
+                        <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">
+                            <地區 />
                         </p>
+                        <ol>
+                            <li class="menu-group">
+                                <a href="#">
+                                    <北部 />
+                                </a>
+                                <ol class="sub-menu" id="north"></ol>
+                            </li>
+                            <li class="menu-group">
+                                <a href="#">
+                                    <中部 />
+                                </a>
+                                <ol class="sub-center">
+                                    <li class="menuItem">
+                                        <a href="#">
+                                            <更新中 />
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="menuItem"><a href="#">Updateing</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="mainInfo">
+                        <h3 class="title">
+                            氣象預報資訊 -
+                            <h3 class="title" id="areaName"></h3>
+                        </h3>
+                        <div class="content">
+                            <div class="homeContent">
+                                <p>
+                                    主要為學習串接API之用，故只提供3個地區作為功能測試。
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footerBar">
             <div class="footer">
                 <h3>終端機 [版本 2019.09.05]</h3>
@@ -67,7 +78,11 @@
                 </div>
             </div>
         </div>
-
+        <!-- jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- bootstrap CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <!-- 自定義js -->
         <script src="./js/main.js"></script>
 </body>
